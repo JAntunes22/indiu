@@ -223,6 +223,9 @@ ul {
         display: initial;
     }
 
+    .top-section {
+        padding: 00.3rem;
+    }
     .top-section .container {
         padding: 0;
         margin: 0;
@@ -237,4 +240,8 @@ ul {
         font-size: 2rem;
         margin: 0.5rem;
     }
+
+    .post-content .post-body p {
+        font-size: 1.1rem;
+        margin: 0 3%;
 }
