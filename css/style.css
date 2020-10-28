@@ -140,7 +140,15 @@ ul {
     display: flex;
     font-family: Montserrat;
     text-align: center;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
 }
+
+.top-section .site-title{
+    margin-top: 5rem;
+}
+
 
 .top-section .container {
     padding: 3rem;
