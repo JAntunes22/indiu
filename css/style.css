@@ -129,7 +129,12 @@ ul {
     padding: 3rem;
 }
 
-.top-section .site-title {
+.top-section .intro {
+   display: flex;
+   justify-content: center;
+}
+
+.top-section .site-title, .eu {
     padding: 3rem;
     justify-content: center;
     display: flex;
@@ -147,12 +152,13 @@ ul {
 .post-content .post-title {
     justify-content: space-around;
     padding: 3rem;
+    margin-top: 3rem;
 }
 
 .post-content .post-title .title h2 {
     font-size: 2.5rem;
     font-family: Montserrat;
-    font-weight: 999;
+    text-align: right;
 }
 
 .post-content .post-title .title h3 {
@@ -178,6 +184,12 @@ ul {
     text-align: justify;
     margin: 0 10%;
     padding: 0.7rem;
+    
+}
+
+.post-content .post-body .trailer {
+    font-family: Karla;
+    font-size: 1.6rem;
     
 }
 
