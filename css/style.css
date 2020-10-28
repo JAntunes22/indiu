@@ -140,6 +140,12 @@ ul {
     display: flex;
     font-family: Montserrat;
     text-align: center;
+}
+
+.top-section .eu {
+    padding: 3rem;
+    justify-content: center;
+    display: flex;
     width: 20rem;
     height: 20rem;
     border-radius: 50%;
