@@ -17,3 +17,8 @@
     font-family: Nanum_Myeongjo;
     src: url('./../fonts/Nanum_Myeongjo/Nanum_Myeongjo-Regular.ttf')
 }
+
+@font-face {
+    font-family: Lora;
+    src: url('./../fonts/Lora/Lora-VariableFont_wght.ttf')
+}

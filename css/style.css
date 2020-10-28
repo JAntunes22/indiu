@@ -4,13 +4,14 @@ html, body {
     margin: 0%;
     box-sizing: border-box;
     overflow-x: hidden;
+    background: var(--text-light);
 }
 
 :root{
 
     /* Colors */
     --text-gray: #3f4954;
-    --text-light: #686666da;
+    --text-light: #f7f7f7;
     --bg-color: #0f0f0f;
     --white: #ffffff;
     --magenta: #962655;
@@ -38,7 +39,6 @@ ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
 }
 
 /* Nav Bar */
@@ -72,11 +72,17 @@ ul {
 
 .nav .toggle-collapse .toggle-icons i{
     font-size: 1.4rem;
+    padding: 0.5rem;
     color: var(--text-gray);
 }
 
+.nav .toggle-collapse .toggle-icons i:hover{
+    color: var(--white);
+    background-color: var(--text-gray);
+}
+
 .collapse {
-    height: 30rem;
+    height: 25rem;
 }
 
 .nav .nav-items {
@@ -92,12 +98,8 @@ ul {
     font-size: 1.1rem;
 }
 
-.nav .nav-items .nav-link:hover {
-    background-color: var(--orange);
-}
-
 .nav .nav-items .nav-link:hover a {
-    color: var(--white);
+    color: var(--orange);
 }
 
 .nav .nav-brand {
@@ -121,6 +123,82 @@ ul {
     color: var(--magenta);
 }
 
+/* Main */
+
+.top-section {
+    padding: 3rem;
+}
+
+.top-section .site-title {
+    padding: 3rem;
+    justify-content: center;
+    display: flex;
+    font-family: Montserrat;
+}
+
+.top-section .container {
+    padding: 3rem;
+    background: white;
+    height: 1000rem;
+    margin: 3rem 5rem;
+}
+
+/* Posts */
+.post-content .post-title {
+    justify-content: space-around;
+    padding: 3rem;
+}
+
+.post-content .post-title .title h2 {
+    font-size: 2.5rem;
+    font-family: Montserrat;
+    font-weight: 999;
+}
+
+.post-content .post-title .title h3 {
+    font-size: 2rem;
+    font-family: Montserrat;
+    text-align: right;
+}
+
+.post-content .post-title .title h4 {
+    font-size: 1.5rem;
+    font-family: Montserrat;
+    text-align: right;
+}
+
+.post-content .post-title .post-image img{
+    width: 20rem;
+    height: 20rem;
+}
+
+.post-content .post-body p {
+    font-family: Lora;
+    font-size: 1.2rem;
+    text-align: justify;
+    margin: 0 10%;
+    padding: 0.7rem;
+    
+}
+
+/* Pagination */
+
+.top-section .pagination {
+    justify-content: center;
+    margin: 4rem 0;
+}
+
+.top-section .pagination a {
+    padding: 0.6rem 0.9rem;
+    border-radius: 2rem;
+    margin: 0.3rem;
+    font-family: Montserrat;
+}
+
+.top-section .pagination .pages {
+    background: var(--text-gray);
+    color: var(--white);
+}
 
 /* Viewport less then or equal to 750px */
 
@@ -133,4 +211,7 @@ ul {
         display: initial;
     }
 
+    .top-section .container {
+        margin: 3rem 0.6rem;
+    }
 }
