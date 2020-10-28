@@ -139,16 +139,36 @@ ul {
     justify-content: center;
     display: flex;
     font-family: Montserrat;
+    text-align: center;
 }
 
 .top-section .container {
     padding: 3rem;
     background: white;
-    height: 1000rem;
     margin: 3rem 5rem;
 }
 
 /* Posts */
+
+.top-section .container .posts .post a {
+    justify-content: space-between;
+    display: flex;
+}
+
+.top-section .container .posts .post h1 {
+    padding: 1rem;
+    padding-right: 3rem;
+    margin: 0;
+    font-family: Karla;
+}
+
+.top-section .container .posts .post .img {
+    height: 7rem;
+    width: 7rem;
+    padding: 1rem;
+    padding-left: 3rem;
+}
+
 .post-content .post-title {
     justify-content: space-around;
     padding: 3rem;
@@ -212,6 +232,25 @@ ul {
     color: var(--white);
 }
 
+/* Footer */
+
+#footer {
+    background: var(--text-gray);
+    color: white;
+    padding: 12px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: right;
+    position: absolute;
+}
+
+#footer .container {
+    padding: 0 2rem;
+    font-family: Lora;
+}
+
 /* Viewport less then or equal to 750px */
 
 @media only screen and (max-width: 750px) {
@@ -244,4 +283,20 @@ ul {
     .post-content .post-body p {
         font-size: 1.1rem;
         margin: 0 3%;
+    }
+
+    .top-section .container .posts .post h1 {
+        padding: 1rem;
+        padding-right: 3rem;
+        font-size: 1rem;
+    }
+
+    .top-section .container .posts .post a {
+        display: block;
+    }
+
+    .top-section .container .posts .post .img {
+        width: 4rem;
+        height: 4rem;
+    }
 }
