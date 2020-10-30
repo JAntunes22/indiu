@@ -1,0 +1,320 @@
+@import url('../css/fonts.css');
+
+html, body {
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background: var(--text-light);
+}
+
+:root{
+
+    /* Colors */
+    --text-gray: #3f4954;
+    --text-light: #f7f7f7;
+    --bg-color: #0f0f0f;
+    --white: #ffffff;
+    --magenta: #962655;
+    --midnight: #104f55;
+    --orange: #d18623;
+
+
+    /* Gradients */
+    --gum: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+}
+
+
+/* Global Classes */
+
+a {
+    text-decoration: none;
+    color: var(--text-gray);
+}
+
+ul {
+    list-style-type: none;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* Nav Bar */
+
+.nav {
+    background: white;
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 10vh;
+    overflow: hidden;
+    transition: height 0.5s ease-in-out;
+}
+
+.nav .nav-menu {
+    justify-content: space-between;
+}
+
+.nav .toggle-collapse {
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+}
+
+.nav .toggle-collapse .toggle-icons {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+
+.nav .toggle-collapse .toggle-icons i{
+    font-size: 1.4rem;
+    padding: 0.5rem;
+    color: var(--text-gray);
+}
+
+.nav .toggle-collapse .toggle-icons i:hover{
+    color: var(--white);
+    background-color: var(--text-gray);
+}
+
+.collapse {
+    height: 25rem;
+}
+
+.nav .nav-items {
+    display: flex;
+    margin: 0;
+}
+
+.nav .nav-items .nav-link {
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+    font-family: Karla;
+    font-size: 1.1rem;
+}
+
+.nav .nav-items .nav-link:hover a {
+    color: var(--orange);
+}
+
+.nav .nav-brand {
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    display: block;
+    font-family: Anton;
+    font-size: 1.7rem;
+}
+
+.nav .social {
+    padding: 1.4rem 0;
+    font-family: Karla;
+}
+
+.nav .social i {
+    padding: 0.2rem;
+}
+
+.nav .social a:hover {
+    color: var(--magenta);
+}
+
+/* Main */
+
+.top-section {
+    padding: 3rem;
+}
+
+.top-section .intro {
+   display: flex;
+   justify-content: center;
+}
+
+.top-section .site-title {
+    padding: 3rem;
+    justify-content: center;
+    display: flex;
+    font-family: Montserrat;
+    text-align: center;
+}
+
+.top-section .eu {
+    padding: 3rem;
+    justify-content: center;
+    display: flex;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+}
+
+.top-section .site-title{
+    margin-top: 5rem;
+}
+
+
+.top-section .container {
+    padding: 3rem;
+    background: white;
+    margin: 3rem 5rem;
+}
+
+/* Posts */
+
+.top-section .container .posts .post a {
+    justify-content: space-between;
+    display: flex;
+}
+
+.top-section .container .posts .post h1 {
+    padding: 1rem;
+    padding-right: 3rem;
+    margin: 0;
+    font-family: Karla;
+}
+
+.top-section .container .posts .post .img {
+    height: 7rem;
+    width: 7rem;
+    padding: 1rem;
+    padding-left: 3rem;
+}
+
+.post-content .post-title {
+    justify-content: space-around;
+    padding: 3rem;
+    margin-top: 3rem;
+}
+
+.post-content .post-title .title h2 {
+    font-size: 2.5rem;
+    font-family: Montserrat;
+    text-align: right;
+}
+
+.post-content .post-title .title h3 {
+    font-size: 2rem;
+    font-family: Montserrat;
+    text-align: right;
+}
+
+.post-content .post-title .title h4 {
+    font-size: 1.5rem;
+    font-family: Montserrat;
+    text-align: right;
+}
+
+.post-content .post-title .post-image img{
+    width: 20rem;
+    height: 20rem;
+}
+
+.post-content .post-body p {
+    font-family: Lora;
+    font-size: 1.2rem;
+    text-align: justify;
+    margin: 0 10%;
+    padding: 0.7rem;
+    
+}
+
+.post-content .post-body .trailer {
+    font-family: Karla;
+    font-size: 1.6rem;
+    
+}
+
+/* Pagination */
+
+.top-section .pagination {
+    justify-content: center;
+    margin: 4rem 0;
+}
+
+.top-section .pagination a {
+    padding: 0.6rem 0.9rem;
+    border-radius: 2rem;
+    margin: 0.3rem;
+    font-family: Montserrat;
+}
+
+.top-section .pagination .pages {
+    background: var(--text-gray);
+    color: var(--white);
+}
+
+/* Footer */
+
+#footer {
+    background: var(--text-gray);
+    color: white;
+    padding: 12px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: right;
+    position: absolute;
+}
+
+#footer .container {
+    padding: 0 2rem;
+    font-family: Lora;
+}
+
+/* Viewport less then or equal to 750px */
+
+@media only screen and (max-width: 750px) {
+    .nav .nav-menu, .nav .nav-items {
+       flex-direction: column; 
+    }
+
+    .nav .toggle-collapse {
+        display: initial;
+    }
+
+    .top-section {
+        padding: 00.3rem;
+    }
+    .top-section .container {
+        padding: 0;
+        margin: 0;
+    }
+
+    .post-content .post-title .post-image img{
+        width: 13rem;
+        height: 13rem;
+    }
+
+    .post-content .post-title .title h2, h3, h4 {
+        font-size: 2rem;
+        margin: 0.5rem;
+    }
+
+    .post-content .post-body p {
+        font-size: 1.1rem;
+        margin: 0 3%;
+    }
+
+    .top-section .container .posts .post h1 {
+        padding: 1rem;
+        padding-right: 3rem;
+        font-size: 1rem;
+    }
+
+    .top-section .container .posts .post a {
+        display: block;
+    }
+
+    .top-section .container .posts .post .img {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .top-section .site-title{
+        margin-top: 0;
+    }    
+}
