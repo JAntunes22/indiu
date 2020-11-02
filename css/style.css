@@ -35,6 +35,13 @@ ul {
     list-style-type: none;
 }
 
+.instaimg img {margin-bottom:30px;}
+.instaimg img:hover {
+	opacity:0.8;
+	-moz-opacity:0.8;
+	-webkit-opacity:0.8;
+}
+
 .flex-row {
     display: flex;
     flex-direction: row;
@@ -213,7 +220,7 @@ ul {
 }
 
 .post-content .post-body p {
-    font-family: Lora;
+    font-family: Roboto;
     font-size: 1.2rem;
     text-align: justify;
     margin: 0 10%;
